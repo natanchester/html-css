@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-style: oblique;
+    font-size: medium;
+}
+a {
+    text-align: right;
+}
