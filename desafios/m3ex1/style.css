@@ -63,10 +63,12 @@ main div.p1{
 }
 
 main div.p2{
-    background:url(imagens/background001.jpg)center center no-repeat;
+    background:url(imagens/background001.jpg) no-repeat;
+    background-position:  center center;
     background-attachment: fixed;
     background-size: cover;
     padding: 20px 10px 20px 10px;
+    box-shadow: inset 0px 0px 8px black ;
 }
 main div.p2 > p {
     color: white;
@@ -84,6 +86,7 @@ main div.p4{
     background-attachment: fixed;
     background-size: cover;
     padding: 20px 10px 20px 10px;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.65) ;
 }
 main div.p4 > p{
     color: white;
