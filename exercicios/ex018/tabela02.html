@@ -21,10 +21,6 @@
             position: sticky;
             top: -1px;
         }
-        tbody > tr:nth-child(2n){
-            background-color: aquamarine;
-        
-        }
         tfoot{
             background-color: rgb(211, 211, 211); ;
         }
@@ -34,6 +30,29 @@
         }
         td.num{
             text-align: right;
+        }
+        table.desafio1{
+            padding: 20px;
+            margin-top: 50px;
+            width: auto;
+        }
+        table.desafio1 th{
+            background-color: rgb(190, 190, 190);
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            padding: 10px;
+        }
+        .col1{
+            background-color: aliceblue;
+        }
+        .col2{
+            background-color: antiquewhite;
+        }
+        .col3{
+            background-color: azure;
+        }
+        .col4{
+            background-color: blanchedalmond;
         }
     </style>
 </head>
@@ -148,7 +167,210 @@
     </table>
     <h1>mesclagem de celulas</h1>
     <table class="mesclado">
+        <tr>
+            <td colspan="2">#</td>
+            
+            <td colspan="2">#</td>
         
+        </tr>
+        <tr>
+            <td>#</td>
+            <td rowspan="3">#</td>
+            <td>#</td>
+            <td rowspan="3">#</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            
+            <td>#</td>
+            
+        </tr>
+        <tr>
+            <td>#</td>
+            
+            <td>#</td>
+            
+        </tr>
+    </table>
+
+    <table class="desafio1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            
+            
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">14</td>
+           
+            <td>16</td>
+        </tr>
+        <tr>
+            
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <table class="desafio1">
+        <tr>
+            <td colspan="4">A</td>
+           
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            
+        </tr>
+        <tr>
+           
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+           
+        </tr>
+        <tr>
+            
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+           
+        </tr>
+        <tr>
+            
+            <td colspan="4">N</td>
+            
+        </tr>
+    </table>
+    <table class="desafio1">
+        <tr> 
+            <td>Grupo</td>
+            <td>Nomes</td>
+            <td colspan="3">Filmes</td>
+           
+        </tr>
+        <tr> 
+            <td rowspan="3">Mulheres</td>
+            <td>Ana maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr> 
+            
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td> 
+        </tr>
+        <tr> 
+            
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr> 
+            <td rowspan="3">Homens</td>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr> 
+            
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr> 
+            
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+    </table>
+    <table class="desafio1">
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3" span="2">
+            <col class="col4">
+        </colgroup>
+        <tr>
+            <th rowspan="2" scope="row">Área</th>
+            <th rowspan="2" scope="row">Diciplinas</th>
+            <th colspan="2" scope="rowgroup">Notas</th>
+            <th rowspan="2" scope="row">Média</th>
+        </tr>
+        <tr>
+            <th scope="row">Nota 1</th>
+            <th scope="row">Nota 2</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Exatas</td>
+            <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="col">Média de Exatas</th>
+            <th>0.0</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Humanas</td>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="col">Média de Humanas</th>
+            <th>0.0</th>
+        </tr>
     </table>
 </body>
 </html>
