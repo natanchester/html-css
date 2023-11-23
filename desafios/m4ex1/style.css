@@ -59,8 +59,12 @@ div#cell{
 }
 
 iframe{
-    height: 80%;
-    width: 90%;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-59.5% ,-51%);
+    height: 470px;
+    width: 268px;
     background-size: cover;
     background-attachment: fixed;
 }
