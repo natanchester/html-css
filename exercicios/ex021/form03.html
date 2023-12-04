@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        div{
+            width: 350px;
+            height: 200px;
+            text-align: left;
+            background: linear-gradient(to left, rgb(73, 73, 149),rgb(64,174, 220));
+            padding: 20px;
+            border-radius: 0px 50px 50px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 2px 2px black;
+            box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.324);
+        }
+        .bot{
+            text-align:center;
+        }
+        .bot input{
+            width: 100px;
+            background-color: white;
+            border: none;
+        }
+        .bot input:hover{
+            background-color: rgb(161, 240, 240);
+        }
+        .b1{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de formulário:</h1>
+    <div>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome Completo:</label>
+                <input placeholder="nome" type="text" class="nome" id="inome" maxlength="30" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média do Aluno(a):</label>
+                <input placeholder="0 a 10" type="number" class="media" id="imedia" min="0" max="10" step="0.1">
+            </p>
+            <p>
+                <label for="idata">Data da Nota:</label>
+                <input type="date" class="data" id="idata">
+            </p>
+            <p>
+                <label for="ihora">Horario:</label>
+                <input type="time" class="hora" id="ihora">
+            </p>
+            <p class="bot">
+                <input class="b1" type="reset" value="Limpar">
+                <input class="b2" type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
