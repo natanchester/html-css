@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário:</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input required type="checkbox" name="fut" id="ifut"><label for="ifut">futebol</label>
+            <input required type="checkbox" name="ten" id="iten">tenis
+            <input type="checkbox" name="bas" id="ibas">basquete
+            <input type="checkbox" name="pin" id="ipin">ping pong
+            <input type="checkbox" name="nat" id="inat">nataçao
+        </fieldset>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
