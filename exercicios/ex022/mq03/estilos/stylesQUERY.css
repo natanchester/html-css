@@ -5,14 +5,30 @@
     #print{display: block;}
 }
 
-@media screen and (min-width) and (max-width: 768px) { 
+@media screen and (min-width: 481px) and (max-width: 768px) { 
     body{
         background: url(../imagens/back-tablet.jpg) no-repeat;
         background-size: cover;
         background-position: center center;
     }
-    img{
-        #tel{display: none;} 
-        #tab{display: block;} 
+    #tel{display: none;}
+    #tab{display: block;} 
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) { 
+    body{
+        background: url(../imagens/back-pc.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
+    #tel{display: none;}
+    #pc{display: block;} 
+}
+@media screen and (min-width: 1201px) { 
+    body{
+        background: url(../imagens/back-tv.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #tel{display: none;}
+    #tv{display: block;} 
 }
