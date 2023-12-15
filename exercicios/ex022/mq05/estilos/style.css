@@ -52,4 +52,57 @@ section#loguin > div#formulario{
     display: block;
     padding: 10px;
 }
+
+form{
+    margin-top: 30px;
+}
+
+div.campo{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+
+div.campo label{
+    display: none;
+}
+
+div.campo input{
+    transform: translateY(-6px);
+}
+
+input[type=submit] {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    width: 80%;
+    background-color: #545454;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 10px 0px;
+}
+form > input[type=submit]:hover {
+    background-color: #ffffff;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+form > a {
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+form > a:hover {
+    text-decoration: underline;
+}
+
     

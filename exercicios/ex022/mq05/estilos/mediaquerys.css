@@ -8,19 +8,35 @@
 
     section#loguin{
         width: 70vw;
+        height: 250px;
     }
 
     section#loguin > div#imagem{
         float: left;
         width: 30%;
         height: 100%;
+        border-radius: 10px 0px 0px 10px;
     }
+    
 
     section#loguin > div#formulario{
         float: right;
         width: 70%;
     }
 
+    form{
+        margin-top: 20px;
+    }
+    
+    input[type=submit] {
+        left: 65%;
+        width: 50%;
+    }
+    
+    form > a {
+        left: 65%;
+        top: 80%;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -30,18 +46,34 @@
     }
 
     section#loguin{
-        width: 990px;
+        width: 900px;
+        height: 250px;
     }
 
     section#loguin > div#imagem {
         float: left;
         width: 50%;
         height: 100%;
+        border-radius: 10px 0px 0px 10px;
     }
 
     section#loguin > div#formulario {
         float: right;
         width: 50%;
+    }
+
+    form{
+        margin-top: 20px;
+    }
+    
+    input[type=submit] {
+        left: 75%;
+        width: 30%;
+    }
+    
+    form > a {
+        left: 75%;
+        top: 80%;
     }
 
 }
